@@ -4,11 +4,31 @@
 }
 
 .forn {
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .first-name {
+  margin: 5px;
 }
 
 .last-name {
+}
+
+.button {
+  margin: 15px;
+  justify-content: center;
+}
+
+.name-container {
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.first-header {
+  margin: 0 15px 0 0;
+}
+
+.second-header {
+  margin: 0 0 15px 0;
 }

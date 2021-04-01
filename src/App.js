@@ -10,21 +10,40 @@ class App extends React.Component{
     this.handleChange = this.handleChange.bind(this)
   }
 
-  handleChange(){
-
+  handleChange(event){
+    const {name, value} = event.target
+    this.setState({
+      [name]: value
+    })
 
   }
 
 
   render(){
     return (
+      <main>
       <div className="form-container">
         <forn className="form">
-          <input name="firstName"  value={this.state.firstName} placeholder="First Name" onChange={this.handleChange} className="first-name"/>
-          <input name="lastName"  value={this.state.lastName} placeholder="Last Name" onChange={this.handleChange} className="last-name"/>
-
+          <input 
+          name="firstName"  
+          value={this.state.firstName} 
+          placeholder="First Name" 
+          onChange={this.handleChange} 
+          className="first-name"/>
+          <input 
+          name="lastName"  
+          value={this.state.lastName} 
+          placeholder="Last Name" 
+          onChange={this.handleChange} 
+          className="last-name"/>
+          <button className="button">Submit</button>
         </forn>
+      </div>
+       <div className="name-container">
+       <h1 className="first-header">{this.state.firstName} </h1>
+       <h1 className="second-header">{this.state.lastName} </h1>
        </div>
+       </main>
      );
   }
 }
