@@ -25,10 +25,25 @@
   justify-content: center;
 }
 
-.first-header {
+.first-name {
   margin: 0 15px 0 0;
 }
 
-.second-header {
+.second-name {
   margin: 0 0 15px 0;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.list-names {
+  margin: 10px;
+  color: red;
 }
